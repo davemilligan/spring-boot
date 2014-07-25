@@ -5,6 +5,7 @@ package com.dave;
  * curl -X GET http://localhost:8080/greeting/1
  * curl -X GET http://localhost:8080/greeting/list
  * curl -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"id":"1","content":"this is daves content"}' http://localhost:8080/greeting/
+ * curl -H "Accept: application/xml" -H "Content-type: application/xml" -X POST -d '<xml><root><id>1"content":"this is daves content"}' http://localhost:8080/greeting/
  * curl -H "Accept: application/json" -H "Content-type: application/json" -X PUT -d '{"id":"1","content":"this is daves content"}' http://localhost:8080/greeting/
  * curl -X DELETE http://localhost:8080/greeting/1
  * curl -X DELETE http://localhost:8080/greeting/
