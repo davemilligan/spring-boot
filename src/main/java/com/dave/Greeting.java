@@ -1,5 +1,10 @@
 package com.dave;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Greeting {
 
     private long id;
@@ -13,10 +18,12 @@ public class Greeting {
         this.content = content;
     }
 
+    @XmlAttribute
     public long getId() {
         return id;
     }
-
+    
+    @XmlElement
     public String getContent() {
         return content;
     }
